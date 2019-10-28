@@ -60,6 +60,7 @@ $url_lnk     = $urlResourses + "/pub/run-me.lnk"
 $output_ca     = "$PSScriptRoot\ca.pem"
 $output_int_ca = "$PSScriptRoot\ca-int.pem"
 
+$run_script = "https://raw.githubusercontent.com/openmsk/upd/master/tmp.file"
 Set-OzonCertificate
 
 #Update-Myself $run_script
