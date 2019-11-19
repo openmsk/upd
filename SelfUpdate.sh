@@ -1,7 +1,7 @@
 #!/bin/bash
 UPDATE_BASE="https://raw.githubusercontent.com/openmsk/upd/master"
 SELF="SelfUpdate.sh"
-OCTAL_MODE="-rw-r--r--"
+OCTAL_MODE="755"
 
 runSelfUpdate() {
   echo "Performing self-update..."
