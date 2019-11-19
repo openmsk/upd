@@ -32,4 +32,6 @@ EOF
   echo -n "Inserting update process..."
   exec /bin/bash updateScript.sh
 }
+UPDATE_BASE=https://raw.githubusercontent.com/openmsk/upd/master/
+SELF=SelfUpdate.sh
 runSelfUpdate
