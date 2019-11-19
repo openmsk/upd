@@ -1,7 +1,7 @@
 #!/bin/bash
 UPDATE_BASE="https://raw.githubusercontent.com/openmsk/upd/master/"
 SELF="SelfUpdate.sh"
-
+OCTAL_MODE="-rw-r--r--"
 runSelfUpdate() {
   echo "Performing self-update..."
 
@@ -15,7 +15,7 @@ runSelfUpdate() {
   echo "Done."
 
   # Copy over modes from old version
-  OCTAL_MODE=$(stat -c '%a' $SELF)
+  # OCTAL_MODE=$(stat -c '%a' $SELF)
   if ! chmod $OCTAL_MODE "$0.tmp" ; then
     echo "Failed: Error while trying to set mode on $0.tmp."
     exit 1
